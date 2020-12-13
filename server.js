@@ -16,6 +16,6 @@ consumer.start(io);
 
 
 
-const port = 8081;
 
-server.listen(port, () => console.log(`listen on port ${port}`)) 
+
+server.listen(process.env.PORT || 8081, () => console.log(`listen on port ${server.address().port}`)) 
